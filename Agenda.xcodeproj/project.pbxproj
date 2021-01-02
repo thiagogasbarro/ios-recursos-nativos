@@ -20,6 +20,7 @@
 		06CE444B259EB78E009A2D6A /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE444A259EB78E009A2D6A /* Localizacao.swift */; };
 		06E5E219259FCE4000C97548 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E218259FCE4000C97548 /* MapaViewController.swift */; };
 		06E5E21C259FD5D200C97548 /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5E21B259FD5D200C97548 /* CalculaMediaAPI.swift */; };
+		06FD699625A1092900FF0992 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FD699525A1092900FF0992 /* Notificacoes.swift */; };
 		A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28100191FD5C2F700E1BDF1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		06CE444A259EB78E009A2D6A /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
 		06E5E218259FCE4000C97548 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		06E5E21B259FD5D200C97548 /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
+		06FD699525A1092900FF0992 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
 		A28100191FD5C2F700E1BDF1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				06CE4446259E941B009A2D6A /* MenuOpcoesAlunos.swift */,
 				06CE4448259EA294009A2D6A /* Mensagem.swift */,
 				06CE444A259EB78E009A2D6A /* Localizacao.swift */,
+				06FD699525A1092900FF0992 /* Notificacoes.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
 				06CE4447259E941B009A2D6A /* MenuOpcoesAlunos.swift in Sources */,
 				06CE4449259EA294009A2D6A /* Mensagem.swift in Sources */,
+				06FD699625A1092900FF0992 /* Notificacoes.swift in Sources */,
 				06E5E219259FCE4000C97548 /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				06CE444B259EB78E009A2D6A /* Localizacao.swift in Sources */,

@@ -10,20 +10,30 @@ import UIKit
 
 class CalculaMediaAPI: NSObject {
     
-    func calculaMediaGeralDosAlunos() {
-        guard let url = URL(string: "https://www.caleum.com.br/mobile") else { return }
+    func calculaMediaGeralDosAlunos(alunos:Array<Aluno>, sucesso:@escaping(_ dicionarioDeMedias:Dictionary<String, Any>) -> Void, falha:@escaping(_ error:Error) -> Void) {
+        guard let url = URL(string: "https://www.caelum.com.br/mobile") else { return }
         var listaDeAlunos: Array<Dictionary<String, Any>> = []
         var json:Dictionary<String, Any> = [:]
-        let dicionarioDeAlunos = [
-            "id": "1",
-            "nome": "Andriu",
-            "endereco": "Rua blablabla, Atibaia",
-            "telefone": "9999-9090",
-            "site": "www.alura.com.br",
-            "nota": "8"
-        ]
-        
-        listaDeAlunos.append(dicionarioDeAlunos as [String:Any])
+       
+        for aluno in alunos {
+            
+            guard let nome = aluno.nome else { break }
+            guard let endereco = aluno.endereco else { break }
+            guard let telefone = aluno.telefone else { break }
+            guard let site = aluno.site else { break }
+            
+            
+            let dicionarioDeAlunos = [
+                "id": "\(aluno.objectID)",
+                "nome": nome,
+                "endereco": endereco,
+                "telefone": telefone,
+                "site": site,
+                "nota": String(aluno.nota)
+            ]
+            listaDeAlunos.append(dicionarioDeAlunos as [String:Any])
+        }
+
         
         json = [
             "list": [
@@ -41,9 +51,10 @@ class CalculaMediaAPI: NSObject {
             let task = URLSession.shared.dataTask(with: requisicao) { (data, response, error) in
                 if error == nil {
                     do {
-                      let dicionario = try JSONSerialization.jsonObject(with: data!, options: [])
+                      let dicionario = try JSONSerialization.jsonObject(with: data!, options: []) as! Dictionary<String, Any>
+                        sucesso(dicionario)
                     }catch {
-                        print(error.localizedDescription)
+                        falha(error)
                     }
 
                 }
