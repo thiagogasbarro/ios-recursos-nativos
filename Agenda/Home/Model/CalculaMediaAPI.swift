@@ -11,6 +11,7 @@ import UIKit
 class CalculaMediaAPI: NSObject {
     
     func calculaMediaGeralDosAlunos(alunos:Array<Aluno>, sucesso:@escaping(_ dicionarioDeMedias:Dictionary<String, Any>) -> Void, falha:@escaping(_ error:Error) -> Void) {
+        
         guard let url = URL(string: "https://www.caelum.com.br/mobile") else { return }
         var listaDeAlunos: Array<Dictionary<String, Any>> = []
         var json:Dictionary<String, Any> = [:]
@@ -38,11 +39,11 @@ class CalculaMediaAPI: NSObject {
         json = [
             "list": [
                 ["aluno": listaDeAlunos]
-                ]
+            ]
         ]
         
         do{
-                  var requisicao = URLRequest(url: url)
+            var requisicao = URLRequest(url: url)
             let data = try JSONSerialization.data(withJSONObject: json, options: [])
             requisicao.httpBody = data
             requisicao.httpMethod = "POST"

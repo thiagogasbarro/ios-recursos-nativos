@@ -15,6 +15,9 @@
 		03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */; };
 		03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */; };
 		03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */; };
+		060694EF25A34D1E00B2996F /* Pino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060694EE25A34D1E00B2996F /* Pino.swift */; };
+		060694F225A34F3F00B2996F /* icon_caelum.png in Resources */ = {isa = PBXBuildFile; fileRef = 060694F125A34F3F00B2996F /* icon_caelum.png */; };
+		062494CF25A33DDC00D8277D /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062494CE25A33DDC00D8277D /* AutenticacaoLocal.swift */; };
 		06CE4447259E941B009A2D6A /* MenuOpcoesAlunos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE4446259E941B009A2D6A /* MenuOpcoesAlunos.swift */; };
 		06CE4449259EA294009A2D6A /* Mensagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE4448259EA294009A2D6A /* Mensagem.swift */; };
 		06CE444B259EB78E009A2D6A /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE444A259EB78E009A2D6A /* Localizacao.swift */; };
@@ -35,6 +38,9 @@
 		03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
+		060694EE25A34D1E00B2996F /* Pino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pino.swift; sourceTree = "<group>"; };
+		060694F125A34F3F00B2996F /* icon_caelum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_caelum.png; sourceTree = "<group>"; };
+		062494CE25A33DDC00D8277D /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
 		06CE4446259E941B009A2D6A /* MenuOpcoesAlunos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpcoesAlunos.swift; sourceTree = "<group>"; };
 		06CE4448259EA294009A2D6A /* Mensagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensagem.swift; sourceTree = "<group>"; };
 		06CE444A259EB78E009A2D6A /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 				03AA17691FC84A2D003CB2B8 /* Alunos */,
 				A28100181FD5C2E300E1BDF1 /* Componentes */,
 				06E5E216259FCE0000C97548 /* Mapa */,
+				060694F025A34F3F00B2996F /* Assets */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
@@ -130,9 +137,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		060694ED25A34D1200B2996F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				060694EE25A34D1E00B2996F /* Pino.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		060694F025A34F3F00B2996F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				060694F125A34F3F00B2996F /* icon_caelum.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		06E5E216259FCE0000C97548 /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				060694ED25A34D1200B2996F /* Model */,
 				06E5E217259FCE1000C97548 /* Controller */,
 			);
 			path = Mapa;
@@ -162,6 +186,7 @@
 				06CE4448259EA294009A2D6A /* Mensagem.swift */,
 				06CE444A259EB78E009A2D6A /* Localizacao.swift */,
 				06FD699525A1092900FF0992 /* Notificacoes.swift */,
+				062494CE25A33DDC00D8277D /* AutenticacaoLocal.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
+				060694F225A34F3F00B2996F /* icon_caelum.png in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
+				060694EF25A34D1E00B2996F /* Pino.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
 				A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */,
@@ -250,6 +277,7 @@
 				06E5E219259FCE4000C97548 /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				06CE444B259EB78E009A2D6A /* Localizacao.swift in Sources */,
+				062494CF25A33DDC00D8277D /* AutenticacaoLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
